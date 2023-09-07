@@ -5,19 +5,11 @@
     padding:0;
 }
 
-body,html{
-    overflow-x: hidden;
-}
-.top-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 20px;
+body,
+html{
+    overflow: hidden;
 }
 
-.top-menu ul li {
-    text-align: center;
-}
 body {
     font-family: 'Montserrat', sans-serif;
 
@@ -25,20 +17,23 @@ body {
 .d-none {
     display: none !important;
 }
-
 .hamburgel svg {
     width: 35px;
 }
-
 .hamburgel {
     cursor: pointer;
+}
+.top-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
 }
 a.btn-rounded-full.bg-green {
     
     padding: 8px 19px;
     border-radius: 50px;
 }
-
 .top-menu .btn-rounded-full {
     margin-top: 20px;
     display: inline-block;
@@ -58,8 +53,6 @@ a.btn-rounded-full.bg-green {
     justify-content: center;
     align-items: center;
 }
-
-
 nav {
     position: absolute;
     top: 0;

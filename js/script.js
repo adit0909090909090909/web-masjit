@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$('.hamburger').click(function () {
-  $(".top-menu").removeclass('d-none');
-}); 
-});
+  $('.hamburgel').click(function(){
+      $("top-menu").removeClass('d-none');
+})
+})
