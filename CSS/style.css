@@ -1,65 +1,682 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,200;1,600&display=swap');
-*{
+* {
     margin:0;
     padding:0;
+    box-sizing: border-box
 }
 
 body,
 html{
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+min-height: 100vh;
+}
+
+.w-full{
+    width:100%;
+    height: auto;
 
 }
-.d-none {
-    display: none !important;
-}
-.hamburgel svg {
-    width: 35px;
-}
-.hamburgel {
-    cursor: pointer;
-}
-.top-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 20px;
-}
-a.btn-rounded-full.bg-green {
+
+@media (min-width: 320px){
+
+    .item-footer {
+        padding: 15px 0;
+    }
     
-    padding: 8px 19px;
-    border-radius: 50px;
-}
-.top-menu .btn-rounded-full {
-    margin-top: 20px;
-    display: inline-block;
+    .item-footer {
+        padding-top: 0;
+        /* text-align: center; */
+    }
+    
+    img {
+        width: 244px;
+    }
+    
+    .item-footer h3 {
+        color: #fff;
+        position: relative;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .item-footer h3:after {
+        content: '';
+        width: 50px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+    }
+    
+    .item-footer-2 i {
+        font-size: 25px;
+        width: 35px;
+    }
+    
+    .item-footer-2 ul {
+        list-style: none;
+        color: #fff;
+        padding-left: 20px;
+    }
+    
+    .item-footer-2 ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    
+    .item-footer-2 ul li:last-child {
+        margin-bottom: 0;
+    }
+    
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 200px;
+    }
+    footer {
+        background: #0a993c url(../img/Group\ 18.svg) repeat;
+        background-blend-mode: multiply;
+        padding: 40px 10%;
+    }
+    .close{
+        display: none;
+    }
+.d-desktop{
+    display: none;
 }
 
-.bg-green {
-    background-color: #0A993C;
+    .swiper-kegiatan .swiper-pagination-bullet-active {
+        opacity: var(--swiper-pagination-bullet-opacity, 1);
+        background: #0a993c;
+    }
+    h2.title-section {
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .swiper-kegiatan .swiper-slide:before {  
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        z-index: -9999;
+    }
+   .swiper-kegiatan .swiper-slide {  
+   margin-bottom: 40px;
 }
-.top-menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+    .description {
+        color: #fff;
+        padding: 30px 0;
+    }
+    
+    .description h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    a.btn-green {
+        background-color: #0A993C;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    
+    .button-kegiatan {
+        text-align: right;
+    }
+
+    h2.title-section:after {
+        content: '';
+        width: 60px;
+        height: 5px;
+        background-color: green;
+        position: absolute;
+        bottom: -9px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .kegiatan-terbaru-sec .swiper{
+        width: 80%;
+        margin: 0 auto;
+    }section.kegiatan-terbaru-sec {
+        background-color: #262626;
+        border-top: .5em solid #0A993c;
+        padding: 40px 0;
+        position: relative;
+    }
+    section.infak-sec {
+        padding: 40px 0;
+        background-color: rgba(163, 255, 172, 0.2);
+    }
+    
+   
+    
+    .infak-section-left h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .small-text {
+        font-size: 20px;
+    }
+    
+    .text-green {
+        color: #0A993C;
+    }
+    
+    span.text-red {
+        color: #D60000;
+    }
+    
+    .infak-section-left h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .infak-section-left article {
+        margin-bottom: 20px;
+    }
+    
+    .cta-infak {
+        display: block;
+        width: 100%;
+        background-color: #0A993C;
+        border: none;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 700;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    
+    .cta-infak:hover {
+        transform: scale(1.1);
+    }
+
+    .infak-section-left {
+        margin-bottom: 30px;
+    }
+    
+    .infak-section-right img {
+        width: 80%;
+    }
+    
+    .infak-section-right img:last-child {
+        margin-left: auto;
+        display: block;
+        margin-top: -25px;
+    }
+    .video-section {
+        background-color: #262626;
+        padding: 50px 0;
+        border-top: 15px solid #0A993C;
+    }
+    .welcome-section_left{
+        text-align: center;
+        color: #fff;
+        margin-bottom:30px ;
+    }
+    
+    .wrapper-video {
+        position: relative;
+        padding-bottom: 56.25%;
+        
+    }
+    .outer-video {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .wrapper-video iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .backdron {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.9);
+        z-index: 1;
+    }
+    .content-popup {
+        color: #000;
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+        width: 90%;
+        padding: 30px 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .welcome-section_left {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    
+    .welcome-section_left article {
+        margin: 15px 0;
+    }
+    
+    .btn-black {
+        background-color: #262626;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    
+    .welcome-section_right img {
+        box-shadow: 0px 3px 8px 1px rgb(0 0 0 / 50%);
+        border-radius: 15px;
+    }
+    .welcome-section {
+        width: 80%;
+        margin: 40px auto;
+        background: #0A993C url(../img/pattern-bg\ 1.png) no-repeat center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        border-radius: 20px;
+        padding: 40px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+    
+    
+    img.quote-left {
+        position: absolute;
+        width: 37px;
+        z-index: 999999;
+    }
+    
+    .quote-left {
+        top: -10px;
+        left: 18px;
+    }
+    .wrapper-popup {
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999999;
+        transform:scale(0);
+        transition: .3s ease-in-out;
+    }
+    .wrapper-popup.show {
+        transform: scale(1);
+    }
+    body {
+        font-family: "montserrat",sans-serif;
+        min-height: 100vh;
+    }
+    
+
+    img.quote-right {
+        position: absolute;
+        width: 37px;
+    }
+    
+    .quote-right {
+        bottom: -10px;
+        right: 18px;
+    }
+    img.quote-left {
+        position: absolute;
+        width: 37px;
+    }
+    
+    .quote-left {
+        top: -6px;
+        left: 18px;
+    }
+ 
+    .hero-hadits {
+        background-color: #262626;
+        color: #fff;
+        text-align: center;
+        width: 300px;
+        border-radius: 15px;
+        margin: -75px auto 0;
+        z-index: 999;
+        position: relative;
+        padding: 28px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    .mySwiper {
+        border-bottom: 0.5em solid #0A993C;
+    }
+    .swiper-slide:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,.5);
+    }
+    .d-none {
+        display: none !important;
+    }
+    .text-hero h6 {
+        font-weight: 400;
+    }
+    .text-hero {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        color: #fff;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .swiper-slide {
+        height: 400px;
+      
+    }
+    .hamburgel svg {
+        width: 35px;
+    }
+    .hamburgel {
+        cursor: pointer; 
+    }
+    .top-menu ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .top-menu ul li {
+        text-align: center;
+        margin: 10px 0;
+        position: relative;
+    }
+    .top-menu ul li.active:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -4px;
+        height: 3px;
+        background-color: green;
+        width: 30%;
+        transform: translateX(-15px);
+    }
+      
+    .btn-rounded-full.bg-green {
+        
+        padding: 8px 19px;
+        border-radius: 50px;
+    }
+    .top-menu .btn-rounded-full {
+        margin-top: 6px;
+        display: inline-block;
+    }
+    
+    .bg-green {
+        background-color: #0A993C;
+    }
+    .top-menu {
+        position: fixed;
+        top: 0;
+        right: -100vw;
+        bottom: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        transition: 0.3s;
+    }
+    .close {
+        position: absolute;
+        top: 20px;
+        right:  20px;
+        z-index: 9999999;
+        cursor: pointer;
+    }
+    img {
+        max-width: 100%;
+    }
+    .close {
+        width: 30px;
+    }
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 999
+    }  
 }
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  
-}  
+    
+@media (min-width: 768px) {
+    .swiper-kegiatan .swiper-slide{
+        height: auto;
+        object-fit: cover;
+    }
+   
+    
+    .wrapper-infak-section {
+        width: 474px;
+    }
+    .wrapper-infak-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .wrapper-infak-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .infak-section-left {
+        width: 50%;
+        flex-shrink: 0;
+        padding-right: 20px;
+    }
+    
+    .content-popup {
+        width: 25em;
+    }
+    .welcome-section {
+        width: 890px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    .hero-hadits {
+        width: 500px;
+        font-size: 14px;
+        margin: -65px auto 10px;
+    }
+    
+    .mySwiper {
+        border-bottom: 1em solid #0A993C;
+    }
+    .swiper-slide {
+        height: 500px;
+        background-color: gray;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        padding: 40px 0;
+    }
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 150px;
+    }
+    .container-fluid {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+    
+    .item-footer {
+        padding: 0 15px;
+    }
+    
+    .item-footer-1 {
+        display: grid;
+        place-content: center;
+    }
+
+    .d-mobile {
+        display: none;
+    }
+.d-desktop{
+    display: block;
+}
+
+    .infak-section-left h3 {
+        font-size: 20px;
+       
+    }
+    span.small-text {
+        font-size: 25px;
+    }
+    .wrapper-infak-section {
+        width: 830px;
+    }
+    .outer-video {
+        width: 700px;
+    }
+    .hero-hadits img {
+        position:absolute;
+        width: 40px;
+    }
+    .top-menu {
+        right: 0;
+        position: relative;
+        width: auto;
+        background: transparent;
+    }
+    .top-menu ul li {
+        display: inline-block;
+        margin: 0 0 0 30px;
+        background-color: transparent;
+    }
+  
+  
+    top-menu ul li 
+    {display: inline-block;
+        margin: 0 15px;
+    }
+ .hamburgel{
+    display:none;
+ }
+}
+
+@media (min-width: 1200px) {
+    .item-footer-3 iframe {
+        width: 100%;
+        height: 250px;
+    }
+    .item-footer-1 {
+        place-content: unset;
+        justify-content: center;
+        align-items: start;
+    }
+    .wrapper-infak-section,
+    .outer-swiper-kegiatan {
+        width: 830px;
+    }
+
+    .content-popup {
+        width: 33em;
+    }
+    .text-hero h2 {
+        font-size: 55px;
+    }
+    
+    .text-hero {
+        width: 100%;
+    }
+    
+    .text-hero h2 {
+        font-size: 55px;
+    }
+    
+    .text-hero h6 {
+        font-size: 20px;
+        line-height: 24px;
+        width: 600px;
+        margin: auto;
+    }
+    .swiper-slide {
+        height: 500px;
+        background-color: gray;
+    }
+    .container {
+        max-width: 1010px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media (min-width: 1400){
+    .swiper-slide {
+        height: 900px;
+        background-color: gray;
+
+        .hero-hadits {
+            font-size: 16px;
+            padding: 60px 40px;
+            width: 600px;
+        }
+        
+        .hero-hadits img {
+            width: 60px;
+        }
+}
+
+}

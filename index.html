@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>Musalla Ar-Rahman</title>
 </head>
 <body>
-  <nav>
+  <nav class="container">
     <div class="logo">
-        <img src="img/logo.svg" alt="logo">
-     
+        <img src="img/logo.svg" alt="logo" />
+      
       </div>
     <div class="hamburgel">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="w-6 h-6">
@@ -18,26 +25,267 @@
       </svg>
       
     </div>
-    <div class="top-menu d-none">
+    <div class="top-menu ">
+      <div class="close">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>       
+      </div>
         <ul>
-            <li><a href="#">Beranda</a></li>
+            <li class="active"><a href="#">Beranda</a></li>
             <li><a href="#">Kegiatan</a></li>
             <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contac</a></li>
+            <li><a href="#">Contact</a></li>
             <li><a href="#"class="btn-rounded-full bg-green">Kirim Infak</a></li>
         </ul>
 
     </div>
   </nav>  
-  <div class="hero">
-    <img src="img/img-hero (1).png" alt="hero">
+  <section class="hero">
+    <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./img/img-hero (1).png" alt="hero">
+        <div class="text-hero">
+          <h2>MUSHALLA AR-RAHMAN</h2>
+          <h6>Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji
+            Kota Padang</h6>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/111.jpg" alt="hero">
+        <div class="text-hero">
+          <h2>MUSHALLA AR-RAHMAN</h2>
+          <h6>Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji
+            Kota Padang</h6>
+        </div>
+      </div>
+      <div class="swiper-slide"> <img src="./img/323.jpg" alt="hero">
+        <div class="text-hero">
+          <h2>MUSHALLA AR-RAHMAN</h2>
+          <h6>Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji
+            Kota Padang</h6>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
   </div>
+  </section>
+<section class="hero-hadits">
+  <img src="./img/1.svg"alt="quote" class="quote-left"/>
+ <p>
+  Barangsiapa membangun masjid karena Allah, meski seukuran lubang tempat burung qatha bertelur, maka Allah membangun untuknya rumah di surga” (HR Ahmad dan Ibnu Abi Syaibah)
+ </p> 
+ <img src="./img/2.svg"alt="quote" class="quote-right"/>
+</section>    
+
+<!--welcome section-->
+<section class="welcome-section">
+  <div class="welcome-section_left">
+  
+  <img src="img/assalamu'alaikum.svg"alt="assalamu'alaikum">
+  <article>
+    <p> Selamat Datang di website resmi Mushalla Ar-Rahman Ladang Kaladi.</p>
+      <p> Di website ini Bapak/Ibu dapat melihat kegiatan-kegiatan kami dan juga bisa menyalurkan infak/Sadaqah terbaik Bapak/Ibu.</p>
+      <button class="btn-black show-popup-infak">KIRIM INFAK</button>
+    </div>
+<div class="welcome-section_right">
+  <img src="img/Mask Group.png"alt="pengurus">
+</div>
+</section>
+
+<!-- video section -->
+<section class="video-section">
+  <div class="outer-video">
+    
+  <div class="wrapper-video">
+    <iframe width="640er-" height="360" src="https://www.youtube.com/embed/-nBomyRVgG4" title="CARA BERSYUKUR | Masjid Nurul Qomar, Balikpapan | Ustadz Abdul Somad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+  </div>
+</div>
+</section>
+
+<!--Infak section-->
+<section class="infak-sec">
+  <div class="wrapper-infak-section">
+   <div class="infak-section-left">
+    <h2><span class="small-text">Siapa bilang</span><span class="text-green">harta </span>tak 
+      dibawa<span class="text-red"> mati ???</h2>
+        <h3>Bisa kok, sedekahin...!!!</h3>
+<article>
+      <p>“Apabila manusia itu meninggal dunia maka terputuslah segala amalnya kecuali tiga: yaitu sedekah jariyah, ilmu yang bermanfaat atau anak sholeh yang mendoakan kepadanya.” 
+          </p>
+          <p>
+           (HR Muslim) 
+          </p>
+
+</article>
+
+<button class="cta-infak show-popup-infak">INFAK NOW</button>
+
+
+   </div>
+   <div class="infak-section-right">
+        <img src="img/Mask Group (1).png" alt="infak">
+        <img src="img/Mask Group (2).png" alt="infak">
+      </div>
+  </div>
+
+</section>
+
+<!--kegiatan terbaru-->
+<section class="kegiatan-terbaru-sec">
+  <h2 class="title-section">KEGIATAN TERBARU</h2>
+  
+ <!-- Swiper -->
+ <div class="outer-swiper-kegiatan">
+ <div class="swiper-kegiatan-button-next d-desktop"></div>
+ <div class="swiper-kegiatan-button-prev d-desktop"></div>
+ <div class="swiper swiper-kegiatan">
+  <div class="swiper-pagination d-mobile"></div>
+  <div class="swiper-wrapper">
+
+    <!--Item-kegiatan-->
+    <div class="swiper-slide">
+      <div class="img-kegiatan">
+       <img src="./img/mesajid.jpeg" alt="masjid" class="w-full">
+      </div>
+<div class="description">
+  <h3>Goro Bersama Murid TPA/TPQ
+   Mushalla AR-rahman</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+</div>
+<div class="button-kegiatan">
+  <a href="#" class="btn-green">LEBIH DETAIL</a>
+     </div>
+  </div>
+
+  
+    <!--Item-kegiatan-->
+    <div class="swiper-slide">
+      <div class="img-kegiatan">
+       <img src="./img/mesajid.jpeg" alt="masjid" class="w-full">
+      </div>
+<div class="description">
+  <h3>Goro Bersama Murid TPA/TPQ
+   Mushalla AR-rahman</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+  </div>
+<div class="button-kegiatan">
+  <a href="#" class="btn-green">LEBIH DETAIL</a>
+     </div>
+  </div>
+
+    <!--Item-kegiatan-->
+    <div class="swiper-slide">
+      <div class="img-kegiatan">
+       <img src="./img/mesajid.jpeg" alt="masjid" class="w-full">
+      </div>
+<div class="description">
+  <h3>Goro Bersama Murid TPA/TPQ
+   Mushalla AR-rahman</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+    </div>
+<div class="button-kegiatan">
+  <a href="#" class="btn-green">LEBIH DETAIL</a>
+     </div>
+  </div>
+
+    <!--Item-kegiatan-->
+    <div class="swiper-slide">
+      <div class="img-kegiatan">
+       <img src="./img/mesajid.jpeg" alt="masjid" class="w-full">
+      </div>
+<div class="description">
+  <h3>Goro Bersama Murid TPA/TPQ
+   Mushalla AR-rahman</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+    </div>
+<div class="button-kegiatan">
+  <a href="#" class="btn-green">LEBIH DETAIL</a>
+     </div>
+  </div>
+
+    <!--Item-kegiatan-->
+    <div class="swiper-slide">
+      <div class="img-kegiatan">
+       <img src="./img/mesajid.jpeg" alt="masjid" class="w-full">
+      </div>
+<div class="description">
+  <h3>Goro Bersama Murid TPA/TPQ
+   Mushalla AR-rahman</h3>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae libero ultricies, aliquam ...</p>
+    </div>
+  
+<div class="button-kegiatan">
+  <a href="#" class="btn-green">LEBIH DETAIL</a>
+     </div>
+  </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+
+<!--popup kirim infak-->
+<div class="wrapper-popup">
+  <div class="backdron"></div>
+  <div class="content-popup">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentcolor" class="close"w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>    
+<div class="content-popup_left">
+<p>No Bank</p>
+<p>No.Rek</p>
+<p>Atas Nama</p>
+</div>
+<div class="content-popup_right">
+<p> :Bank BCA</p>
+<p> :12345678</p>
+<p> :Mushalla Ar-Rahman</p>
+</div>
+  </div>
+</div>
+
+<footer>
+  <div class="container-fluid">
+    <div class="item-footer item-footer-1">
+      <img src="./img/Group 39.svg" alt="logo-footer" clas="logo-footer">
+    </div>
+    <div class="item-footer item-footer-2">
+      <h3>Contact</h3>
+      <ul>
+        <li><i class="fab fa-whatsapp"></i> <span>0813-6438-4575</span></li>
+        <li> <i class="fab fa-twitter"></i> <span> @Ar-Rahman</span></li>
+        <li><i class="fab fa-facebook"></i> <span>mushalla_ar_rahman</span></li>
+        <li><i class="far fa-envelope"></i> <span>m.arrahman@gmail.com</span></li>
+      </ul>
+     
+    </div>
+    <div class="item-footer item-footer-3">
+<h3>Lokasi mushalla</h3>
+
+<iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1021343.1024131965!2d100.0193048346367!3d0.
+5691210988617257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+1!3m3!1m2!1s0x302afdbc027a8f85%3A0x599267a668cfdf1e!2sMasjid%20Raya%20Tuanku%20Rao!5e0!3m2!1sid!2sid!4v1695927169418!5m2!1sid!2sid"
+ width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+ referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+  </div>
+</footer>
 
   <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
   crossorigin="anonymous">
 </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html> 
